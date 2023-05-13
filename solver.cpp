@@ -1,7 +1,17 @@
+// solver.cpp
 //1.需要将滑块数据转换为固定数据和可变数据（不同滑块的位置）
 //2.重写printmap函数（是否用类封装）
 //3.设计树遍历算法，探索解法
 
+TreeNode::CalcChildren()
+{
+  if (0 != m_vChildren.size())
+    return false;
+}
+
+void solverMain(const std::array<int, 2>& size, const std::vector<Slider>& sliders)
+{
+}
 // 定义一个函数，用于将滑块打印在地图上
 void print_map(const std::vector<Slider>& sliders, const std::array<int, 2>& size) {
     int width = size[0]; // 获取地图的宽度
